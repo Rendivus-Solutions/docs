@@ -146,9 +146,6 @@
   "icons": {
     "library": "tabler"
   },
-  "background": {
-    "decoration": "grid"
-  },
   "fonts": {
     "heading": {
       "family": "Geist"
@@ -159,5 +156,10 @@
   },
   "metadata": {
     "timestamp": true
+  },
+  "errors": {
+    "404": {
+      "redirect": true
+    }
   }
 }

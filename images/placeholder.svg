@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder">
+  <rect width="1200" height="675" fill="#EEF2F9"/>
+  <rect x="1" y="1" width="1198" height="673" fill="none" stroke="#C7D2E4" stroke-width="2" stroke-dasharray="10 8"/>
+  <g fill="#4F88E4">
+    <rect x="540" y="280" width="120" height="84" rx="10" fill="#DCE6F7"/>
+    <circle cx="576" cy="312" r="12"/>
+    <path d="M556 352l28-30 22 22 18-16 30 24v2H556z"/>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="30" fill="#4F88E4" font-weight="600">Screenshot coming soon</text>
+  <text x="600" y="468" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#7A8AA6">Replace this placeholder with a product screenshot</text>
+</svg>

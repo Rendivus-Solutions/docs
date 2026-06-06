@@ -1,97 +1,132 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "theme": "mint",
+  "name": "Raddivus",
+  "description": "Help center and product documentation for Raddivus, the AI marketing copilot for Meta Ads, ad creative, and Instagram content.",
   "colors": {
-    "primary": "#166E3F",
-    "light": "#26BD6C",
-    "dark": "#166E3F"
+    "primary": "#5E98F1",
+    "light": "#7DB0F5",
+    "dark": "#4F88E4"
   },
-  "favicon": "/favicon.ico",
-  "icons": {
-    "library": "lucide"
-  },
-  "styling": {
-    "eyebrows": "breadcrumbs"
-  },
-  "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
-  },
-  "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
-        },
-        {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
-        }
-      ]
-    },
-    "directory": "card",
-    "groups": [
-      {
-        "group": "Platform",
-        "icon": "layers",
-        "expanded": true,
-        "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
-        ]
-      },
-      {
-        "group": "Analytics",
-        "icon": "chart-bar",
-        "expanded": true,
-        "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
-        ]
-      },
-      {
-        "group": "Integrations",
-        "icon": "plug",
-        "expanded": true,
-        "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
-        ]
-      }
-    ]
-  },
+  "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "getting-started/navigating-raddivus",
+              "getting-started/plans-and-credits"
+            ]
+          },
+          {
+            "group": "Connecting your accounts",
+            "pages": [
+              "connections/connect-meta",
+              "connections/connect-instagram",
+              "connections/connect-clickup"
+            ]
+          },
+          {
+            "group": "Brands",
+            "pages": ["brands/brand-profiles", "brands/knowledge-base"]
+          },
+          {
+            "group": "Creating ads",
+            "pages": [
+              "create-ads/ad-generator",
+              "create-ads/ad-copier",
+              "create-ads/video-generator",
+              "create-ads/ad-options-reference"
+            ]
+          },
+          {
+            "group": "Instagram content",
+            "pages": [
+              "instagram/overview",
+              "instagram/single-post",
+              "instagram/plan-a-month",
+              "instagram/editing-posts",
+              "instagram/scheduling-and-publishing",
+              "instagram/importing-content",
+              "instagram/send-to-clickup",
+              "instagram/history"
+            ]
+          },
+          {
+            "group": "AI Agent",
+            "pages": [
+              "ai-agent/overview",
+              "ai-agent/model-tiers",
+              "ai-agent/permissions",
+              "ai-agent/approvals",
+              "ai-agent/pro-features"
+            ]
+          },
+          {
+            "group": "Analytics & library",
+            "pages": ["analytics/ad-analytics", "analytics/ad-library"]
+          },
+          {
+            "group": "Organize & collaborate",
+            "pages": [
+              "collaborate/saved-ads",
+              "collaborate/team",
+              "collaborate/community"
+            ]
+          },
+          {
+            "group": "Account & billing",
+            "pages": [
+              "account/settings",
+              "account/credits-and-billing",
+              "account/notifications",
+              "account/updates-changelog",
+              "account/security-and-privacy"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": ["help/faq", "help/troubleshooting"]
+          }
+        ]
+      }
+    ]
+  },
   "navbar": {
-    "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to app",
+      "href": "https://raddivus.com"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
-    }
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          { "label": "Home", "href": "https://raddivus.com" },
+          { "label": "Pricing", "href": "https://raddivus.com/pricing" }
+        ]
+      },
+      {
+        "header": "Help",
+        "items": [
+          { "label": "FAQ", "href": "https://docs.raddivus.com/help/faq" },
+          {
+            "label": "Troubleshooting",
+            "href": "https://docs.raddivus.com/help/troubleshooting"
+          }
+        ]
+      }
+    ]
   }
 }

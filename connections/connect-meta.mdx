@@ -1,0 +1,58 @@
+---
+title: "Connect Meta Ads"
+description: "Connect your Meta (Facebook and Instagram) Ads account to Raddivus to unlock the AI Agent and Ad Analytics."
+---
+
+Connecting a Meta Ads account lets Raddivus read your campaign data and power the [AI Agent](/ai-agent/overview) and [Ad Analytics](/analytics/ad-analytics). Your access token is encrypted and used only to talk to Meta on your behalf.
+
+## Before you start
+
+- You need a **Meta Business account** with at least one ad account (a personal Facebook account is not enough).
+- You need the right role in Meta Business Manager. If you do not have permission for an ad account, Meta will block the connection.
+
+## Connect your account
+
+<Steps>
+  <Step title="Open Connections">
+    Go to **Settings → Connections** and find the **Meta** card.
+  </Step>
+  <Step title="Start the connection">
+    Click **Connect Meta Ads**. A popup opens for Meta's secure login. If the
+    popup is blocked, Raddivus falls back to a full-page redirect.
+  </Step>
+  <Step title="Sign in and grant access">
+    Sign in to Meta and choose which business and ad accounts to share. Approve
+    the requested permissions (reading ads, pages, and insights).
+  </Step>
+  <Step title="Link to a brand">
+    Back in Raddivus, each connected ad account can be linked to one brand.
+    Connected accounts appear in a list with **Reconnect** and **Unlink**
+    options.
+  </Step>
+</Steps>
+
+## Where it's used
+
+- **AI Agent** at `/agent` reads and analyzes the connected account and can propose changes for your approval.
+- **Ad Analytics** at `/ad-analytics` shows a live gallery of every ad with its metrics.
+
+## Safety
+
+When you upload a generated ad to Meta through the agent, it is always created in **paused** status, so it never spends budget until you activate it yourself in Meta Ads Manager.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The agent says it can't access my account">
+    Your Meta token may have expired or been revoked. Go to **Settings →
+    Connections** and click **Reconnect** on the account.
+  </Accordion>
+  <Accordion title="Connection fails with a permissions error">
+    Ad account access is controlled by Meta Business Manager. Confirm you have
+    the right role on the ad account, then try again.
+  </Accordion>
+  <Accordion title="The login popup didn't open">
+    Allow popups for Raddivus, or let the full-page redirect complete and sign
+    in there.
+  </Accordion>
+</AccordionGroup>

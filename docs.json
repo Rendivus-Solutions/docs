@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "luma",
   "name": "Raddivus",
   "description": "Help center and product documentation for Raddivus, the AI marketing copilot for Meta Ads, ad creative, and Instagram content.",
   "colors": {
@@ -150,6 +150,14 @@
     "decoration": "grid"
   },
   "fonts": {
-    "family": "Geist"
+    "heading": {
+      "family": "Geist"
+    },
+    "body": {
+      "family": "Inter"
+    }
+  },
+  "metadata": {
+    "timestamp": true
   }
 }

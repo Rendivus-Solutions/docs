@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Generating short AI video ads">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16294D"/><stop offset="0.6" stop-color="#23467F"/><stop offset="1" stop-color="#3568C4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#4F88E4" stop-opacity="0.5"/><stop offset="1" stop-color="#4F88E4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#glow)"/>
+  <circle cx="150" cy="80" r="90" fill="#fff" opacity="0.05"/>
+  <circle cx="1060" cy="280" r="110" fill="#fff" opacity="0.05"/>
+  <g>
+    <rect x="486" y="86" width="228" height="150" rx="16" fill="#fff" opacity="0.16" stroke="#fff" stroke-opacity="0.30"/>
+    <path d="M576 134 l46 27 -46 27 z" fill="#fff"/>
+    <rect x="486" y="250" width="228" height="10" rx="5" fill="#fff" opacity="0.18"/>
+    <rect x="486" y="250" width="120" height="10" rx="5" fill="#CFE0FB"/>
+    <circle cx="606" cy="255" r="9" fill="#fff"/>
+  </g>
+  <g fill="#CFE0FB"><path d="M744 100 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 z"/></g>
+</svg>

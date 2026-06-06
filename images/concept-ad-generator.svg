@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Generating original ad images">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16294D"/><stop offset="0.6" stop-color="#23467F"/><stop offset="1" stop-color="#3568C4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#4F88E4" stop-opacity="0.5"/><stop offset="1" stop-color="#4F88E4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#glow)"/>
+  <circle cx="150" cy="80" r="90" fill="#fff" opacity="0.05"/>
+  <circle cx="1060" cy="280" r="110" fill="#fff" opacity="0.05"/>
+  <g transform="rotate(-7 600 170)" opacity="0.95">
+    <rect x="486" y="78" width="210" height="170" rx="16" fill="#fff" opacity="0.10" stroke="#fff" stroke-opacity="0.18"/>
+  </g>
+  <g opacity="0.98">
+    <rect x="510" y="92" width="220" height="166" rx="16" fill="#fff" opacity="0.16" stroke="#fff" stroke-opacity="0.30"/>
+    <circle cx="566" cy="138" r="18" fill="#CFE0FB"/>
+    <path d="M524 232 l44 -54 30 30 34 -42 60 66 z" fill="#9FC2F4"/>
+  </g>
+  <g fill="#CFE0FB">
+    <path d="M742 96 l8 20 20 8 -20 8 -8 20 -8 -20 -20 -8 20 -8 z"/>
+    <path d="M470 250 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z" opacity="0.8"/>
+  </g>
+</svg>

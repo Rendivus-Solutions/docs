@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Creating branded variations from an existing ad">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16294D"/><stop offset="0.6" stop-color="#23467F"/><stop offset="1" stop-color="#3568C4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#4F88E4" stop-opacity="0.5"/><stop offset="1" stop-color="#4F88E4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#glow)"/>
+  <circle cx="150" cy="80" r="90" fill="#fff" opacity="0.05"/>
+  <circle cx="1060" cy="280" r="110" fill="#fff" opacity="0.05"/>
+  <!-- source -->
+  <g opacity="0.95">
+    <rect x="430" y="98" width="190" height="150" rx="14" fill="#fff" opacity="0.12" stroke="#fff" stroke-opacity="0.22"/>
+    <circle cx="478" cy="140" r="15" fill="#9FC2F4"/>
+    <path d="M444 226 l36 -44 26 26 30 -36 48 54 z" fill="#7FA8E8"/>
+  </g>
+  <!-- arrow -->
+  <path d="M636 173 h70 m-18 -16 18 16 -18 16" fill="none" stroke="#CFE0FB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- variations -->
+  <g opacity="0.98">
+    <rect x="724" y="78" width="180" height="140" rx="14" fill="#fff" opacity="0.10" stroke="#fff" stroke-opacity="0.22" transform="rotate(-5 814 148)"/>
+    <rect x="744" y="116" width="190" height="146" rx="14" fill="#fff" opacity="0.18" stroke="#fff" stroke-opacity="0.32"/>
+    <circle cx="792" cy="158" r="15" fill="#CFE0FB"/>
+    <path d="M760 238 l34 -42 24 24 30 -36 46 52 z" fill="#9FC2F4"/>
+  </g>
+</svg>

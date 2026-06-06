@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "luma",
+  "theme": "maple",
   "name": "Raddivus",
   "description": "Help center and product documentation for Raddivus, the AI marketing copilot for Meta Ads, ad creative, and Instagram content.",
   "colors": {
@@ -10,8 +10,8 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
+    "light": "/images/light.svg",
+    "dark": "/images/dark.svg",
     "href": "https://raddivus.com"
   },
   "navigation": {

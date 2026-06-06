@@ -14,89 +14,93 @@
     "dark": "/logo/dark.svg"
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "getting-started/navigating-raddivus",
-              "getting-started/plans-and-credits"
-            ]
-          },
-          {
-            "group": "Connecting your accounts",
-            "pages": [
-              "connections/connect-meta",
-              "connections/connect-instagram",
-              "connections/connect-clickup"
-            ]
-          },
-          {
-            "group": "Brands",
-            "pages": ["brands/brand-profiles", "brands/knowledge-base"]
-          },
-          {
-            "group": "Creating ads",
-            "pages": [
-              "create-ads/ad-generator",
-              "create-ads/ad-copier",
-              "create-ads/video-generator",
-              "create-ads/ad-options-reference"
-            ]
-          },
-          {
-            "group": "Instagram content",
-            "pages": [
-              "instagram/overview",
-              "instagram/single-post",
-              "instagram/plan-a-month",
-              "instagram/editing-posts",
-              "instagram/scheduling-and-publishing",
-              "instagram/importing-content",
-              "instagram/send-to-clickup",
-              "instagram/history"
-            ]
-          },
-          {
-            "group": "AI Agent",
-            "pages": [
-              "ai-agent/overview",
-              "ai-agent/model-tiers",
-              "ai-agent/permissions",
-              "ai-agent/approvals",
-              "ai-agent/pro-features"
-            ]
-          },
-          {
-            "group": "Analytics & library",
-            "pages": ["analytics/ad-analytics", "analytics/ad-library"]
-          },
-          {
-            "group": "Organize & collaborate",
-            "pages": [
-              "collaborate/saved-ads",
-              "collaborate/team",
-              "collaborate/community"
-            ]
-          },
-          {
-            "group": "Account & billing",
-            "pages": [
-              "account/settings",
-              "account/credits-and-billing",
-              "account/notifications",
-              "account/updates-changelog",
-              "account/security-and-privacy"
-            ]
-          },
-          {
-            "group": "Help",
-            "pages": ["help/faq", "help/troubleshooting"]
-          }
+        "group": "Getting started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "getting-started/navigating-raddivus",
+          "getting-started/plans-and-credits"
+        ]
+      },
+      {
+        "group": "Connecting your accounts",
+        "pages": [
+          "connections/connect-meta",
+          "connections/connect-instagram",
+          "connections/connect-clickup"
+        ]
+      },
+      {
+        "group": "Brands",
+        "pages": [
+          "brands/brand-profiles",
+          "brands/knowledge-base"
+        ]
+      },
+      {
+        "group": "Creating ads",
+        "pages": [
+          "create-ads/ad-generator",
+          "create-ads/ad-copier",
+          "create-ads/video-generator",
+          "create-ads/ad-options-reference"
+        ]
+      },
+      {
+        "group": "Instagram content",
+        "pages": [
+          "instagram/overview",
+          "instagram/single-post",
+          "instagram/plan-a-month",
+          "instagram/editing-posts",
+          "instagram/scheduling-and-publishing",
+          "instagram/importing-content",
+          "instagram/send-to-clickup",
+          "instagram/history"
+        ]
+      },
+      {
+        "group": "AI Agent",
+        "pages": [
+          "ai-agent/overview",
+          "ai-agent/model-tiers",
+          "ai-agent/permissions",
+          "ai-agent/approvals",
+          "ai-agent/pro-features"
+        ]
+      },
+      {
+        "group": "Analytics & library",
+        "pages": [
+          "analytics/ad-analytics",
+          "analytics/ad-library"
+        ]
+      },
+      {
+        "group": "Organize & collaborate",
+        "pages": [
+          "collaborate/saved-ads",
+          "collaborate/team",
+          "collaborate/community"
+        ]
+      },
+      {
+        "group": "Account & billing",
+        "pages": [
+          "account/settings",
+          "account/credits-and-billing",
+          "account/notifications",
+          "account/updates-changelog",
+          "account/security-and-privacy"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "help/faq",
+          "help/troubleshooting"
         ]
       }
     ]
@@ -113,14 +117,23 @@
       {
         "header": "Product",
         "items": [
-          { "label": "Home", "href": "https://raddivus.com" },
-          { "label": "Pricing", "href": "https://raddivus.com/pricing" }
+          {
+            "label": "Home",
+            "href": "https://raddivus.com"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://raddivus.com/pricing"
+          }
         ]
       },
       {
         "header": "Help",
         "items": [
-          { "label": "FAQ", "href": "https://docs.raddivus.com/help/faq" },
+          {
+            "label": "FAQ",
+            "href": "https://docs.raddivus.com/help/faq"
+          },
           {
             "label": "Troubleshooting",
             "href": "https://docs.raddivus.com/help/troubleshooting"

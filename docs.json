@@ -4,14 +4,15 @@
   "name": "Raddivus",
   "description": "Help center and product documentation for Raddivus, the AI marketing copilot for Meta Ads, ad creative, and Instagram content.",
   "colors": {
-    "primary": "#5E98F1",
-    "light": "#7DB0F5",
+    "primary": "#4F88E4",
+    "light": "#4F88E4",
     "dark": "#4F88E4"
   },
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://raddivus.com"
   },
   "navigation": {
     "groups": [
@@ -141,5 +142,14 @@
         ]
       }
     ]
+  },
+  "icons": {
+    "library": "tabler"
+  },
+  "background": {
+    "decoration": "grid"
+  },
+  "fonts": {
+    "family": "Geist"
   }
 }

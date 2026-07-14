@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-label="Page not found">
+  <defs>
+    <linearGradient id="bg404" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16294D"/><stop offset="0.6" stop-color="#23467F"/><stop offset="1" stop-color="#3568C4"/>
+    </linearGradient>
+    <radialGradient id="glow404" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#4F88E4" stop-opacity="0.5"/><stop offset="1" stop-color="#4F88E4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg404)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#glow404)"/>
+  <circle cx="150" cy="80" r="90" fill="#fff" opacity="0.05"/>
+  <circle cx="1060" cy="280" r="110" fill="#fff" opacity="0.05"/>
+  <g fill="#fff" font-family="Geist, Inter, system-ui, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="600" y="200" font-size="150" letter-spacing="6" opacity="0.96">404</text>
+  </g>
+  <g fill="#CFE0FB" font-family="Inter, system-ui, sans-serif" text-anchor="middle">
+    <text x="600" y="250" font-size="26" letter-spacing="2" opacity="0.85">PAGE NOT FOUND</text>
+  </g>
+  <g fill="#CFE0FB">
+    <path d="M300 110 l8 20 20 8 -20 8 -8 20 -8 -20 -20 -8 20 -8 z"/>
+    <path d="M900 96 l8 20 20 8 -20 8 -8 20 -8 -20 -20 -8 20 -8 z" opacity="0.9"/>
+    <path d="M860 250 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z" opacity="0.8"/>
+    <path d="M340 250 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 z" opacity="0.7"/>
+  </g>
+</svg>

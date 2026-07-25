@@ -8,13 +8,22 @@ description: "Data privacy and security in Raddivus: how your data is encrypted,
 - Your data is encrypted in transit and at rest.
 - Ad account access tokens are stored securely and used only to connect to Meta on your behalf.
 - The AI Agent only accesses your account data during active conversations. It does not maintain persistent background access.
-- Each conversation is isolated. The agent does not carry information from one conversation to another.
+- Conversation transcripts are not carried from one conversation to another. Opening a new chat does not give the agent the text of an older chat.
+- The agent does keep a short set of notes about you and about each brand, and those notes carry into every new conversation. You can read, edit, restore and delete every word of them, or turn memory off, in Settings, Memory. See [What the agent remembers](/ai-agent/memory).
 
 ## What the agent can and cannot see
 
 **Can see:** your connected ad account (campaigns, ad sets, ads, and performance), your brand profile, your saved ad folders, and generated ads from the current conversation and your creative library.
 
-**Cannot see:** other users' accounts or data, your payment or billing information, your email, password, or account credentials, and previous conversations.
+**Cannot see:** other users' accounts or data, your payment or billing information, your email, password, or account credentials, and the transcripts of your previous conversations.
+
+## Memory
+
+The agent keeps notes on what it learns as you talk to it, so you do not have to repeat yourself in a new chat. Two sets: one about you, and one for each brand. Notes about one brand never appear while you work on another.
+
+The notes are tied to your account. Team members never see each other's notes, and nothing learned about one user is used for another.
+
+You control all of it in Settings, Memory: read the notes in plain text, edit them, restore an earlier version, clear one set, or delete everything. Memory can be turned off at three levels, and turning it off deletes nothing. Full detail in [What the agent remembers](/ai-agent/memory).
 
 ## Uploading to Meta
 

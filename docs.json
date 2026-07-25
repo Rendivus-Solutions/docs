@@ -70,7 +70,8 @@
           "ai-agent/permissions",
           "ai-agent/approvals",
           "ai-agent/model-tiers",
-          "ai-agent/pro-features"
+          "ai-agent/pro-features",
+          "ai-agent/memory"
         ]
       },
       {

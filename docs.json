@@ -70,6 +70,7 @@
           "ai-agent/permissions",
           "ai-agent/approvals",
           "ai-agent/model-tiers",
+          "ai-agent/memory",
           "ai-agent/pro-features"
         ]
       },
@@ -93,6 +94,7 @@
         "pages": [
           "account/settings",
           "account/credits-and-billing",
+          "account/referrals",
           "account/notifications",
           "account/updates-changelog",
           "account/changelog",

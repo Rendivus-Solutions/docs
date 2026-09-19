@@ -56,13 +56,19 @@
         "pages": [
           "instagram/overview",
           "instagram/single-post",
-            "instagram/post-your-own-images",
+          "instagram/post-your-own-images",
           "instagram/plan-a-month",
           "instagram/editing-posts",
           "instagram/scheduling-and-publishing",
           "instagram/importing-content",
           "instagram/send-to-clickup",
           "instagram/history"
+        ]
+      },
+      {
+        "group": "Content Studio",
+        "pages": [
+          "content-studio/competitors"
         ]
       },
       {

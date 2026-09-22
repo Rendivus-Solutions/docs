@@ -68,6 +68,7 @@
       {
         "group": "Content Studio",
         "pages": [
+          "content-studio/overview",
           "content-studio/competitors"
         ]
       },

@@ -80,6 +80,7 @@
           "ai-agent/approvals",
           "ai-agent/model-tiers",
           "ai-agent/memory",
+          "ai-agent/skills",
           "ai-agent/pro-features"
         ]
       },

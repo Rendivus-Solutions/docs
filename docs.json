@@ -47,6 +47,7 @@
           "create-ads/ad-generator",
           "create-ads/ad-copier",
           "create-ads/projects",
+          "create-ads/publish-to-meta",
           "create-ads/video-generator",
           "create-ads/ad-options-reference"
         ]
@@ -56,13 +57,20 @@
         "pages": [
           "instagram/overview",
           "instagram/single-post",
-            "instagram/post-your-own-images",
+          "instagram/post-your-own-images",
           "instagram/plan-a-month",
           "instagram/editing-posts",
           "instagram/scheduling-and-publishing",
           "instagram/importing-content",
           "instagram/send-to-clickup",
           "instagram/history"
+        ]
+      },
+      {
+        "group": "Content Studio",
+        "pages": [
+          "content-studio/overview",
+          "content-studio/competitors"
         ]
       },
       {
@@ -73,6 +81,7 @@
           "ai-agent/approvals",
           "ai-agent/model-tiers",
           "ai-agent/memory",
+          "ai-agent/skills",
           "ai-agent/pro-features"
         ]
       },

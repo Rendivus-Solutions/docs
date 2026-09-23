@@ -46,6 +46,7 @@
         "pages": [
           "create-ads/ad-generator",
           "create-ads/ad-copier",
+          "create-ads/projects",
           "create-ads/publish-to-meta",
           "create-ads/video-generator",
           "create-ads/ad-options-reference"

@@ -58,4 +58,5 @@ One-time purchases. Credits from packs never expire and are added to your balanc
 - **Monthly or yearly:** yearly plans are billed once for the year and cost the equivalent of 10 months, so you get 2 months free. Your credit allowance is still granted monthly.
 - **Downgrade:** takes effect at the end of your current billing period. You keep your current plan until then.
 - **Cancellation:** access continues until the period ends. Purchased credits remain usable. Monthly grants stop.
-- **Payment failure:** a grace period of about 7 days allows retries. If all retries fail, the account is canceled and unused monthly credits are frozen until reactivated.
+- **Payment failure:** the tools pause as soon as a payment fails, while Stripe retries the card over about 7 days. You can still sign in and update your card from the banner at the top of every page; as soon as a retry succeeds, your account and credits are back exactly as they were. If every retry fails, the subscription is cancelled and unused monthly credits are frozen until reactivated.
+- **Billing emails:** We email you when a payment fails, two days before your free trial ends, and once per billing month when you drop under 15% of your monthly credits. On a team account they go to the account owner.

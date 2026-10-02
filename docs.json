@@ -96,6 +96,7 @@
         "group": "Organize and collaborate",
         "pages": [
           "collaborate/saved-ads",
+          "collaborate/tasks",
           "collaborate/team",
           "collaborate/community"
         ]

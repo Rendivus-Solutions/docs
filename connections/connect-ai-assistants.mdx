@@ -1,0 +1,151 @@
+---
+title: "Connect Raddivus to Claude, Claude Code, Cursor and Perplexity"
+description: "Use your brands, folders and the Ad Generator from the AI assistant you already work in. Free to connect on every plan; generating costs the same credits as in Raddivus."
+---
+
+You can connect Raddivus to an AI assistant and ask it things like "list my brands" or "make two 4:5 ads for Nordic Bakery about the autumn menu". The assistant works as you: it sees what you can see in Raddivus and nothing else.
+
+Connecting is **free on every plan, including the free trial**. Generating costs exactly what it costs in Raddivus: **1 credit per image**, and **1 credit** to make a new version of an ad. Browsing your brands, folders and Knowledge Base is free.
+
+## What you need
+
+- A Raddivus account you can sign in to.
+- The Raddivus address, the same for every assistant:
+
+```text
+https://app.raddivus.com/api/mcp
+```
+
+- The Raddivus **client id for your assistant**, listed in each section below. Each assistant has its own.
+
+## Connect your assistant
+
+<Tabs>
+  <Tab title="Claude">
+    Works in Claude on the web, the desktop app and the mobile app, on every Claude plan (the Free plan allows one custom connector).
+
+    <Steps>
+      <Step title="Add a custom connector">
+        In Claude, open **Customize → Connectors** and choose **Add custom connector**. On a Team or Enterprise plan, an owner adds it under **Organization settings → Connectors → Add → Custom**.
+      </Step>
+      <Step title="Paste the address and the client id">
+        Name it **Raddivus** and paste the address. Under the authentication settings choose **Use your own OAuth client** and paste this client id. Leave the secret blank.
+
+        ```text
+        {CLAUDE_CLIENT_ID}
+        ```
+      </Step>
+      <Step title="Sign in and allow">
+        Claude opens Raddivus. Sign in, check that the page names **claude.ai**, and press **Allow**.
+      </Step>
+    </Steps>
+
+    <Warning>
+      Claude does not let you change these settings after the connector is added. If you picked the wrong option, remove the connector and add it again.
+    </Warning>
+  </Tab>
+  <Tab title="Claude Code">
+    <Steps>
+      <Step title="Add the server">
+        Run this in your terminal. The callback port must be 8080.
+
+        ```bash
+        claude mcp add --transport http --client-id {CLAUDE_CODE_CLIENT_ID} --callback-port 8080 raddivus https://app.raddivus.com/api/mcp
+        ```
+      </Step>
+      <Step title="Sign in and allow">
+        In Claude Code, type `/mcp`, pick **raddivus** and follow the link. Sign in, check that the page names **localhost**, and press **Allow**.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Cursor">
+    <Steps>
+      <Step title="Add Raddivus to mcp.json">
+        Open Cursor's MCP settings and add this entry to `mcp.json`:
+
+        ```json
+        {
+          "mcpServers": {
+            "raddivus": {
+              "url": "https://app.raddivus.com/api/mcp",
+              "auth": {
+                "CLIENT_ID": "{CURSOR_CLIENT_ID}"
+              }
+            }
+          }
+        }
+        ```
+      </Step>
+      <Step title="Sign in and allow">
+        Cursor opens Raddivus. Sign in, check the website the page names, and press **Allow**.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Perplexity">
+    <Steps>
+      <Step title="Add a custom connector">
+        In Perplexity, add a custom connector, choose a **Remote** server and **OAuth** sign-in, and paste the address.
+      </Step>
+      <Step title="Paste the client id">
+        Paste this client id and leave the secret blank.
+
+        ```text
+        {PERPLEXITY_CLIENT_ID}
+        ```
+      </Step>
+      <Step title="Sign in and allow">
+        Perplexity opens Raddivus. Sign in, check that the page names **perplexity.ai**, and press **Allow**.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Note>
+  ChatGPT Business is expected to work through its developer mode (admins, web only), but we have not tested it yet.
+</Note>
+
+## What the assistant can do
+
+- List your brands and read a brand's profile.
+- List your folders, the ads in them and your recent ads.
+- Search and read your Knowledge Base.
+- Check your plan and credits.
+- Generate new ad images for a brand, and make a new version of an ad you generated.
+- Save an ad to one of your folders.
+
+It cannot publish anything, change or delete anything, or buy credits.
+
+**One request makes at most 12 images** (variations × ad types × angles). A bigger request is refused before anything is charged, and the assistant asks you for fewer. Images usually come back in the same answer; when they take longer, the assistant checks back on its own.
+
+<Info>
+  If an image job fails, or is still not finished after about 7 minutes, Raddivus refunds exactly what it charged, once. You see the refund in **Settings → Credits**.
+</Info>
+
+The images the assistant shows you are links to the files, so they stay in the assistant's chat history like any link you paste there.
+
+## On a team
+
+Each person connects their own assistant to their own login, and it sees only what that person sees. Credits come from the account's shared balance, and the credit history shows who spent them. The account owner and admins see every connection on the account under **Settings → Integrations → Connected assistants**; a member sees only their own.
+
+## Disconnect an assistant
+
+Open **Settings → Integrations → Connected assistants** and press **Revoke** next to the connection. The assistant stops on its very next request. To use it again, connect it from the assistant.
+
+Changing your Raddivus password also disconnects every assistant on your login. Signing out of Raddivus in your browser does not.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="The assistant says assistant access is in a limited preview">
+    Assistant access is opening to accounts gradually. Try again later, or use Raddivus at app.raddivus.com.
+  </Accordion>
+  <Accordion title="The assistant says my plan is not active">
+    Browsing still works, but generating is paused until your plan is active. See your plan under **Settings → Billing**.
+  </Accordion>
+  <Accordion title="The assistant asks me to connect again">
+    The connection was revoked, or your password was changed. Connect it again from the assistant.
+  </Accordion>
+  <Accordion title="Sign-in fails with a redirect or client error">
+    Check that you pasted the client id for **your** assistant (each one is different). In Claude Code, the `--callback-port 8080` part is required.
+  </Accordion>
+</AccordionGroup>

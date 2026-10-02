@@ -76,6 +76,8 @@ The [Ad Copier](/create-ads/ad-copier) has no model picker. It uses whichever mo
 
 Generation runs in the background, so you can navigate away or even close the tab. You will see placeholder cards immediately, and finished images replace them as they complete, usually within 30 to 120 seconds depending on how many you requested. If you reopen the page, in-progress batches resume automatically.
 
+Each card shows what is really happening. First it shows the step the run is on (**Writing the ad**, then **Drawing the image**) over a softly moving dot pattern. On the OpenAI models (GPT Image 2, 2.5 Flare and 2.5 Sunburst) you then watch the image take shape: a blurred preview with a percentage in the corner (25%, 50%, 75%), and the finished ad replaces it in the same spot. The number only moves when OpenAI sends a real preview, so a quick image can jump straight to the finished ad. A preview cannot be saved or downloaded, and previews cost no extra credits. The Google models (Nano Banana 2 and Nano Banana Pro) send nothing until the image is done, so their cards show the step until the ad arrives.
+
 <Note>
   The number of images is set by the **Variations** field, not by how many ad
   types or angles you select. Three variations costs 3 credits, regardless of

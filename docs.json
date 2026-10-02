@@ -38,7 +38,8 @@
         "group": "Brands",
         "pages": [
           "brands/brand-profiles",
-          "brands/knowledge-base"
+          "brands/knowledge-base",
+          "brands/client-onboarding"
         ]
       },
       {

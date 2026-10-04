@@ -1,49 +1,91 @@
 ---
 title: "Ad Analytics"
-description: "Audit every ad in your connected Meta Ads accounts in one gallery with live performance metrics and filters for campaign, status, media type, and date."
+description: "See how your Meta ads are performing: headline numbers, a daily trend, spend by channel and by service, and every campaign, ad set and ad in one table with its on/off switch."
 ---
 
-Ad Analytics is a visual gallery of every ad in your connected Meta Ads accounts. Use it as a quick audit of every active and historical creative you have run.
+Ad Analytics is a performance dashboard for your connected Meta Ads accounts. It answers "how are my ads doing this month, compared with last month?" and lets you act on the answer without opening Ads Manager.
 
-**Where:** sidebar → **Ad Analytics**. **Cost:** free to view. Requires a [connected Meta account](/connections/connect-meta).
+**Where:** sidebar → **Ad Analytics**. **Cost:** 0 credits. **Plans:** Professional and VIP. Requires a [connected Meta account](/connections/connect-meta).
 
 <img src="/images/concept-analytics.svg" alt="Illustration of live ad performance metrics and charts" noZoom />
 
-## What you see
+## Pick what you are looking at
 
-Each ad shows its thumbnail, status, and key metrics pulled live from Meta:
+The filter row at the top of the page sets everything below it:
 
-- Impressions
-- Clicks
-- Spend
-- CTR (click-through rate)
-- CPC (cost per click)
-- Reach
+- **Date range**: the last 7, 14, 30 or 90 days. The page opens on the last 30 days.
+- **Compare to**: the previous period of the same length, or no comparison. "Same period last year" appears once Raddivus holds a year of history for the account.
+- **Channel**: all channels, or one (Facebook, Instagram, and so on).
+- **Ad account**: shows which account the numbers come from. A brand with two or more Meta ad accounts opens on the first one; pick another, or **All ad accounts** to add them together. An account that needs reconnecting says so here.
 
-## Filter the gallery
+Your choices stay in the page address, so a refresh or a link you share opens the same view.
 
-{/* SCREENSHOT TODO: the Ad Analytics gallery grid with the filter controls visible */}
+<Note>
+  The first time you open an account, Raddivus collects its last 180 days from
+  Meta. This takes a moment, and the page says so while it runs. After that,
+  the numbers refresh every night.
+</Note>
+
+## Headline cards and the trend chart
+
+Each card shows one number for the period and how it changed against the comparison period, in green when the change is good for you and red when it is not. Click a card to draw that number in the chart below, day by day, with the comparison period as a second line.
+
+Results count one kind of result at a time: the one your account spends the most on, such as **Leads** for a lead-generation account. Leads are never added to clicks. An account that reports online sales also sees revenue cards (Revenue, Ad spend, ROAS, New customers, Cost per new customer).
+
+## Channels and services
+
+Two boxes split the period:
+
+- **Channels** lists every place Meta ran your ads (Facebook, Instagram, Threads, WhatsApp, Messenger, Audience Network) with what each spent, its cost per result and its share of the spend. Anything Meta cannot place is **Other**, always last.
+- **Services** groups your results by the brand's services ("Leads by service"). Each campaign's service is guessed from its name every night. A campaign whose name names no service is **Not assigned**, always last.
+
+To set a campaign's service yourself, open the **Campaigns** tab and pick it from the campaign's **Service** menu. The Services box updates at once, any teammate can change it, and a service you picked is never replaced by the nightly guess. If the brand has no services yet, the box offers a button to add them on the brand page.
+
+## The table: campaigns, ad sets and ads
+
+Below the boxes, tabs list **Suggestions**, **Campaigns**, **Ad sets** and **Ads**. Each row shows the item's on/off switch, its name, its budget per day (or a quality grade for ads), spend, results, cost per result, clicks and CTR for the period, with the change against the comparison period. A short grey note under the name says when something other than the item's own switch is stopping it (Campaign off, Ad set off, Scheduled, In review, Issues).
+
+{/* SCREENSHOT TODO: the Campaigns tab with switches, a service menu and the search row */}
+
+- **Search** by name, **filter** by status (Active, Paused, Scheduled, Issues) and **sort** by any number column.
+- **Hide columns** you do not need from the column picker. Clicks and CTR start hidden. Your choice is remembered in this browser.
+- Under **All ad accounts**, each row names its account.
+- On the **Ads** tab, click a thumbnail to see it larger.
+
+The table always lists everything Meta reports for the period, whatever channel is picked, and says so when a channel is picked.
+
+## Turn campaigns, ad sets and ads on or off
+
+Press a row's switch to turn that campaign, ad set or ad on or off on Meta. Raddivus asks you to confirm first, because turning something off stops its spending right away. If Meta refuses, the switch moves back and a message says why.
 
 <Steps>
-  <Step title="Select an account">
-    Choose a connected Meta ad account from the dropdown.
+  <Step title="Tick the rows">
+    To change several at once, tick their boxes. The search row is replaced by
+    a bar with the count.
   </Step>
-  <Step title="Apply filters">
-    Narrow by campaign, status (active, paused, and more), media type (image,
-    video, or carousel), and a date range.
+  <Step title="Choose Turn off or Turn on">
+    Raddivus acts only on the ticked rows that would actually change, up to 50
+    at a time.
   </Step>
-  <Step title="Open an ad">
-    Click any ad to see its full creative and metrics.
-
-    {/* SCREENSHOT TODO: a single ad's detail view showing its creative and performance metrics */}
+  <Step title="Confirm">
+    One confirmation names how many will change. Any rows Meta refuses are put
+    back and named together in one message.
   </Step>
 </Steps>
 
-<Tip>
-  Data is pulled fresh from Meta. If numbers look stale, refresh the page.
-</Tip>
+<Warning>
+  Only the workspace owner or an admin can use the switches and tick boxes.
+  Other teammates can see them, with a line above the table explaining why they
+  cannot use them.
+</Warning>
 
-## Weekly recommendations
+## Suggestions
+
+The **Suggestions** tab lists the brand's weekly Raddivus recommendations, the same ones as the dashboard card, one per row with its category and the day it was written. The tab's number counts the suggestions still waiting for a decision. When none are left it says "You are all caught up."
+
+**Apply** queues a suggestion and keeps it on the list, checked off. The **X** dismisses it. Acting on a suggestion here or on the dashboard is the same action.
+
+### How the weekly recommendations are written
 
 Every week, Raddivus judges each running Meta ad: **winning**, **holding steady**, **underperforming**, or **too early to judge**. For a winning or underperforming ad it names the most likely reason (the angle, the message, the visual, the copy, the audience, or for videos the first 3 seconds, the middle, or the ending) and proposes 1 to 5 tests to run next, such as a new creative or a new angle. Each recommendation cites a real number from your account, never a vague suggestion.
 
@@ -51,9 +93,9 @@ Ads whose goal is attention rather than customers (reach, impressions, link clic
 
 Ads that are too new or have too little data never get a verdict. They are grouped into one **Give it time** note, which you can dismiss. An ad is judged once it has run 3 days and has 1,000 views plus 3 results, or has spent twice your usual cost per result for that kind of result.
 
-The Ad Analytics grades, the weekly recommendations and the [AI agent](/ai-agent/overview) all use these same rules, so they give the same verdict about the same ad.
+The ad grades on the Ads tab, the weekly recommendations and the [AI agent](/ai-agent/overview) all use these same rules, so they give the same verdict about the same ad.
 
-Apply the recommendations you want, or dismiss the rest. Applying a recommendation queues it for us. Automatic execution is coming in an upcoming update, so for now applying tells us which moves you approve of.
+Applying a recommendation queues it for us. Automatic execution is coming in an upcoming update, so for now applying tells us which moves you approve of.
 
 When you dismiss a recommendation, Raddivus asks why, right on the recommendation. You can skip the question; the recommendation is dismissed either way. Your answer is remembered for the brand:
 
@@ -69,15 +111,31 @@ Any teammate's answer counts for the whole brand.
 
 Weekly recommendations are free on every plan, including the trial. They require a connected, active Meta ad account. 0 credits.
 
+## Recent account changes
+
+A history feed shows what changed on the chosen ad account recently: budget updates, ads created, ads paused or turned on, and targeting edits. Pick the last 7, 14 or 30 days and switch between **Key changes** and **All changes**. Under **All ad accounts** the feed is hidden, because it reads one account at a time.
+
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="No ads are showing">
-    The account may have no ads, or the filters are too narrow. Clear the
-    filters and confirm the account has campaigns in Meta.
+  <Accordion title="The page says it is collecting history">
+    Raddivus is reading the account's last 180 days from Meta for the first
+    time. Wait a moment and refresh.
   </Accordion>
-  <Accordion title="A video or carousel won't show a full preview">
-    Some ad formats only return a preview thumbnail. View the original in Meta
-    Ads Manager.
+  <Accordion title="A campaign is under Not assigned">
+    Its name does not name one of the brand's services. Pick the right service
+    from the campaign's Service menu on the Campaigns tab.
+  </Accordion>
+  <Accordion title="A switch moved back on its own">
+    Meta refused the change; the message beside it says why. If it asks you to
+    reconnect, use its Reconnect button and try again.
+  </Accordion>
+  <Accordion title="I cannot use the switches">
+    Only the workspace owner or an admin can turn ads on or off. Ask one of
+    them to change your role, or to make the change.
+  </Accordion>
+  <Accordion title="No rows are showing">
+    The search or status filter may be too narrow. Clear them and confirm the
+    account has campaigns in Meta for the period.
   </Accordion>
 </AccordionGroup>

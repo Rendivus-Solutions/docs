@@ -20,6 +20,8 @@ The filter row at the top of the page sets everything below it:
 
 Your choices stay in the page address, so a refresh or a link you share opens the same view.
 
+The period ends on the last day Meta's numbers are fully in. That is normally yesterday. In the evening (US time), before the nightly refresh, it ends the day before, so a half-finished day never makes your numbers look like they dropped. The chart, its legend, the "through" line under it and the card changes always name the same last day.
+
 <Note>
   The first time you open an account, Raddivus collects its last 180 days from
   Meta. This takes a moment, and the page says so while it runs. After that,
@@ -32,6 +34,8 @@ Each card shows one number for the period and how it changed against the compari
 
 Results count one kind of result at a time: the one your account spends the most on, such as **Leads** for a lead-generation account. Leads are never added to clicks. An account that reports online sales also sees revenue cards (Revenue, Ad spend, ROAS, New customers, Cost per new customer).
 
+Money is shown in the ad account's own currency. Currencies that Meta counts in whole units, such as Japanese yen and Korean won, show no decimals. Under **All ad accounts**, accounts that use different currencies show amounts without a currency symbol.
+
 ## Channels and services
 
 Two boxes split the period:
@@ -40,6 +44,27 @@ Two boxes split the period:
 - **Services** groups your results by the brand's services ("Leads by service"). Each campaign's service is guessed from its name every night. A campaign whose name names no service is **Not assigned**, always last.
 
 To set a campaign's service yourself, open the **Campaigns** tab and pick it from the campaign's **Service** menu. The Services box updates at once, any teammate can change it, and a service you picked is never replaced by the nightly guess. If the brand has no services yet, the box offers a button to add them on the brand page.
+
+### Assign your campaigns
+
+When more than half of the period's spend is **Not assigned**, the Services box shows a short note with **Assign campaigns** and **Dismiss**.
+
+<Steps>
+  <Step title="Click Assign campaigns">
+    A window lists the unassigned campaigns that spent, biggest spender first,
+    each with its Service menu.
+  </Step>
+  <Step title="Pick a service for each">
+    Every pick saves at once, and the Services box behind the window updates.
+  </Step>
+  <Step title="Click Done">
+    The note is gone for good for that ad account, for your whole team.
+    **Dismiss** does the same without assigning anything. Closing the window
+    with the X keeps the note, so you can come back to it.
+  </Step>
+</Steps>
+
+The note shows only when one ad account is selected.
 
 ## The table: campaigns, ad sets and ads
 
@@ -81,7 +106,7 @@ Press a row's switch to turn that campaign, ad set or ad on or off on Meta. Radd
 
 ## Suggestions
 
-The **Suggestions** tab lists the brand's weekly Raddivus recommendations, the same ones as the dashboard card, one per row with its category and the day it was written. The tab's number counts the suggestions still waiting for a decision. When none are left it says "You are all caught up."
+The **Suggestions** tab lists the brand's weekly Raddivus recommendations, the same ones as the dashboard card, one per row with its category and the day it was written. The tab's number counts the suggestions still waiting for a decision. It turns amber when the oldest of them has waited more than two weeks; hover it to see since when. When none are left it says "You are all caught up."
 
 **Apply** queues a suggestion and keeps it on the list, checked off. The **X** dismisses it. Acting on a suggestion here or on the dashboard is the same action.
 
@@ -121,6 +146,11 @@ A history feed shows what changed on the chosen ad account recently: budget upda
   <Accordion title="The page says it is collecting history">
     Raddivus is reading the account's last 180 days from Meta for the first
     time. Wait a moment and refresh.
+  </Accordion>
+  <Accordion title="My numbers end the day before yesterday">
+    Meta's numbers for yesterday arrive with the nightly refresh. Until then
+    the period ends on the last complete day, so nothing looks lower than it
+    is. Check again later in the night.
   </Accordion>
   <Accordion title="A campaign is under Not assigned">
     Its name does not name one of the brand's services. Pick the right service

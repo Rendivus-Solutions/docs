@@ -1,9 +1,9 @@
 ---
 title: "Raddivus in Slack"
-description: "Add Raddivus to your agency's Slack workspace and ask about any brand's ad numbers and tasks from a channel or a direct message."
+description: "Add Raddivus to your agency's Slack workspace, link your teammates, and ask about any brand's ad numbers and tasks from a channel or a direct message."
 ---
 
-Raddivus in Slack lets anyone in your agency's Slack workspace ask about a brand's Meta ad numbers and its tasks without opening the app. Mention **@Raddivus** in a channel or send it a direct message, and the answer lands in the thread. It is available on **all plans**, including Starter and the free trial. Installing is free; each answer costs the same as one AI Agent message.
+Raddivus in Slack lets your linked teammates ask about a brand's Meta ad numbers and its tasks without opening the app. Mention **@Raddivus** in a channel or send it a direct message, and the answer lands in the thread. It is available on **all plans**, including Starter and the free trial. Installing and linking are free; each answer costs the same as one AI Agent message.
 
 Raddivus in Slack only reads numbers and tasks and gives advice. It never pauses ads, changes budgets, changes a task or creates anything in Slack.
 
@@ -22,15 +22,40 @@ You need to be the account owner or an admin in Raddivus. Slack may also ask tha
     members' names.
   </Step>
   <Step title="Back in Raddivus">
-    The Slack card shows **Connected** with the workspace name. Everyone in
-    that workspace can now ask.
+    The Slack card shows **Connected** with the workspace name. You are linked
+    to your own Slack account automatically, so you can ask straight away.
+  </Step>
+  <Step title="Link your teammates">
+    Go to **Settings → Team**. On each teammate's row, open the **…** menu and
+    choose **Link Slack account**, then pick that person from the list of the
+    workspace's members and click **Save**. The row now says
+    "Slack: *their name*".
   </Step>
 </Steps>
 
 <Note>
-  The install is shared. Everyone in the Slack workspace can ask about the
-  account's brands, and every answer spends the account's credits. The credit
-  history shows who asked.
+  The install is shared. Every linked teammate can ask about the account's
+  brands, and every answer spends the account's credits. The credit history
+  shows who asked. The Slack card shows how many teammates are linked.
+</Note>
+
+## Link teammates to Slack
+
+Raddivus answers only people it knows. Each teammate is linked to one Slack person, and only the account owner or an admin can make, change or remove a link.
+
+- **Link:** Settings → Team → the teammate's **…** menu → **Link Slack account**. The list shows the full members of your Slack workspace; guests, bots and people from other companies are left out. Type in the search box to find someone in a long list.
+- **Change:** the same menu shows **Change Slack account** once a teammate is linked.
+- **Unlink:** **Unlink Slack account** removes the link. That person can no longer ask until they are linked again.
+- **Yourself and the owner:** owners and admins can link any row, their own included.
+
+Raddivus stores the Slack person's permanent id, not their display name, so renaming yourself in Slack does not break the link. When someone is removed from the team, their Slack link is removed too.
+
+<Note>
+  If your account added Raddivus to Slack before linking existed, nobody is
+  linked yet. The owner links themselves first from their own row in
+  **Settings → Team**, then links the teammates. A solo account with no team
+  can instead disconnect Slack and add it again, which links the person who
+  adds it.
 </Note>
 
 ## Ask a question
@@ -42,12 +67,13 @@ Mention **@Raddivus** in any channel it has been added to, or send it a direct m
 - "Show me a line chart of cost per lead for the last 30 days."
 - "What's overdue for ModiFloors?"
 - "What is Luis working on?"
+- "What's on my plate?"
 - "Where are we on the summer menu post?"
 - "Anything blocked?"
 
 An ads answer opens with the conclusion in bold and one line on why, then a card with the brand and period in words, at most three numbers side by side with their change, a period dropdown and an **Open in Ad Analytics** button. A chart appears only when you ask for one. When the answer compares specific ads, they show side by side as small cards with the ad's picture on top.
 
-A task answer says in a sentence what is going on, then lists up to eight tasks with the same status icon the Tasks page shows, the title (tap it to open the task), who is on it, the due date and how many days late it is, plus an **Open task list** button. "Late" and "today" follow your own Slack time zone.
+A task answer says in a sentence what is going on, then lists up to eight tasks with the same status icon the Tasks page shows, the title (tap it to open the task), who is on it, the due date and how many days late it is, plus an **Open task list** button. "Late" and "today" follow your own Slack time zone. "My tasks" means the tasks of the teammate you are linked to.
 
 The numbers are the same stored numbers the Ad Analytics page shows, for the last 7, 14, 30 or 90 days, in the ad account's own currency. Task titles, names and dates are read from Raddivus at that moment.
 
@@ -59,7 +85,7 @@ Picking another period in the dropdown rewrites the answer for that period. The 
 
 ## Which brand does it mean?
 
-Raddivus works out the brand from the name in your question, a nickname, the kind of business ("the dental client"), the brand the thread is already about, or the brand pinned to the channel. When it cannot tell, it asks with a short list of your brands and answers once you pick one.
+Raddivus works out the brand from the name in your question, a nickname, the kind of business ("the dental client"), the brand the thread is already about, or the brand pinned to the channel. When it cannot tell, it asks with a short list of your brands and answers once the person who asked picks one. If someone else taps the list, only they see a note that only the person who asked can pick.
 
 To pin a channel to a brand, type `/raddivus brand <name>` in that channel. Only you see the confirmation. From then on, questions in that channel default to that brand.
 
@@ -70,16 +96,17 @@ A brand with no Meta ad account connected still answers about its tasks, its bra
 | Action | Cost |
 | --- | --- |
 | Adding or removing Raddivus from Slack | Free |
+| Linking or unlinking a teammate | Free |
 | Each answer (ads or tasks) | One Agent message |
 | Picking a new period on a posted answer | One Agent message the first time, then free |
 | A reply Raddivus stays out of | Free |
-| A refusal (out of credits, guest, hourly limit) | Free |
+| A refusal (not linked, out of credits, guest, hourly limit) | Free |
 
 Credits come from the account's pool. See [Credits and billing](/account/credits-and-billing).
 
 ## Who can ask
 
-Only full members of the installing workspace get answers. A guest, or someone from another company in a shared channel, is told to ask a full member. Bots are ignored.
+Only full members of the installing workspace who are linked to a teammate get answers, pin channels or switch periods. Someone who is not linked is told that an owner or admin can link them from their row in **Settings → Team**. A guest, or someone from another company in a shared channel, is told to ask a full member. Bots are ignored.
 
 ## Remove Raddivus from Slack
 
@@ -88,22 +115,27 @@ Open **Settings → Connections → Slack** and click **Disconnect**, or remove 
 ## Troubleshooting
 
 <AccordionGroup>
+  <Accordion title="Raddivus says my Slack account isn't linked">
+    An owner or admin needs to link you: **Settings → Team**, your row, **…**
+    → **Link Slack account**, then pick you from the list. The reply costs
+    nothing.
+  </Accordion>
   <Accordion title="Raddivus replied with one line instead of an answer">
-    This happens when the account is out of credits, its subscription has
-    expired, Slack access is switched off for the account, or the workspace has
-    already had 60 answers in the last hour. The line says which, and for the
-    hourly limit, when to try again. None of these replies costs credits.
+    This happens when you are not linked yet, the account is out of credits,
+    its subscription has expired, Slack access is switched off for the
+    account, or the workspace has already had 60 answers in the last hour. The
+    line says which, and for the hourly limit, when to try again. None of
+    these replies costs credits.
   </Accordion>
   <Accordion title="The Slack card says Reconnect">
     Slack stopped accepting Raddivus's access, usually after a change on the
     Slack side. Click **Reconnect** on the card to approve the app again.
-    Nothing else needs to change.
+    Nothing else needs to change; links stay.
   </Accordion>
-  <Accordion title="It answered for the wrong teammate's tasks">
-    "My tasks" is matched to a teammate by your name in Slack, and the answer
-    says whose tasks it showed. When the name fits nobody or more than one
-    teammate, Raddivus asks which one is meant. Make sure your Slack display
-    name matches your name in Raddivus.
+  <Accordion title="It showed someone else's tasks for &quot;my tasks&quot;">
+    "My tasks" follows your link. Check on the Team page that your row says
+    your own Slack name; if not, an owner or admin can change it from the
+    **…** menu.
   </Accordion>
   <Accordion title="Can it change a task or pause an ad?">
     Not from Slack. Creating, moving, assigning or commenting on tasks, and any

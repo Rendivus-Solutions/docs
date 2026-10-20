@@ -1,0 +1,112 @@
+---
+title: "Raddivus in Slack"
+description: "Add Raddivus to your agency's Slack workspace and ask about any brand's ad numbers and tasks from a channel or a direct message."
+---
+
+Raddivus in Slack lets anyone in your agency's Slack workspace ask about a brand's Meta ad numbers and its tasks without opening the app. Mention **@Raddivus** in a channel or send it a direct message, and the answer lands in the thread. It is available on **all plans**, including Starter and the free trial. Installing is free; each answer costs the same as one AI Agent message.
+
+Raddivus in Slack only reads numbers and tasks and gives advice. It never pauses ads, changes budgets, changes a task or creates anything in Slack.
+
+## Add Raddivus to your workspace
+
+You need to be the account owner or an admin in Raddivus. Slack may also ask that you are allowed to add apps to the workspace.
+
+<Steps>
+  <Step title="Open Connections">
+    Go to **Settings → Connections** and open the **Slack** card. Click
+    **Add to Slack**.
+  </Step>
+  <Step title="Approve in Slack">
+    Slack opens in the same tab. Pick the workspace and approve. Raddivus only
+    asks for what it needs to read mentions, reply in threads and look up
+    members' names.
+  </Step>
+  <Step title="Back in Raddivus">
+    The Slack card shows **Connected** with the workspace name. Everyone in
+    that workspace can now ask.
+  </Step>
+</Steps>
+
+<Note>
+  The install is shared. Everyone in the Slack workspace can ask about the
+  account's brands, and every answer spends the account's credits. The credit
+  history shows who asked.
+</Note>
+
+## Ask a question
+
+Mention **@Raddivus** in any channel it has been added to, or send it a direct message. Some things people ask:
+
+- "How did ModiFloors do last week?"
+- "Which ad has the best cost per lead for the dental client?"
+- "Show me a line chart of cost per lead for the last 30 days."
+- "What's overdue for ModiFloors?"
+- "What is Luis working on?"
+- "Where are we on the summer menu post?"
+- "Anything blocked?"
+
+An ads answer opens with the conclusion in bold and one line on why, then a card with the brand and period in words, at most three numbers side by side with their change, a period dropdown and an **Open in Ad Analytics** button. A chart appears only when you ask for one. When the answer compares specific ads, they show side by side as small cards with the ad's picture on top.
+
+A task answer says in a sentence what is going on, then lists up to eight tasks with the same status icon the Tasks page shows, the title (tap it to open the task), who is on it, the due date and how many days late it is, plus an **Open task list** button. "Late" and "today" follow your own Slack time zone.
+
+The numbers are the same stored numbers the Ad Analytics page shows, for the last 7, 14, 30 or 90 days, in the ad account's own currency. Task titles, names and dates are read from Raddivus at that moment.
+
+## Follow up in the thread
+
+Reply in the same thread to continue. A follow-up like "and last week?" keeps the brand. In a channel thread Raddivus is already answering in, you do not need to mention it again: it answers when the reply is asking Raddivus something and stays out of it when the reply is for a colleague. That check costs nothing.
+
+Picking another period in the dropdown rewrites the answer for that period. The first switch to a period costs one Agent message; switching back and forth afterwards is free.
+
+## Which brand does it mean?
+
+Raddivus works out the brand from the name in your question, a nickname, the kind of business ("the dental client"), the brand the thread is already about, or the brand pinned to the channel. When it cannot tell, it asks with a short list of your brands and answers once you pick one.
+
+To pin a channel to a brand, type `/raddivus brand <name>` in that channel. Only you see the confirmation. From then on, questions in that channel default to that brand.
+
+A brand with no Meta ad account connected still answers about its tasks, its brand profile and its documents. Asked about ads or numbers, it says the brand has no Meta ad account connected yet. See [Connect Meta](/connections/connect-meta).
+
+## What it costs
+
+| Action | Cost |
+| --- | --- |
+| Adding or removing Raddivus from Slack | Free |
+| Each answer (ads or tasks) | One Agent message |
+| Picking a new period on a posted answer | One Agent message the first time, then free |
+| A reply Raddivus stays out of | Free |
+| A refusal (out of credits, guest, hourly limit) | Free |
+
+Credits come from the account's pool. See [Credits and billing](/account/credits-and-billing).
+
+## Who can ask
+
+Only full members of the installing workspace get answers. A guest, or someone from another company in a shared channel, is told to ask a full member. Bots are ignored.
+
+## Remove Raddivus from Slack
+
+Open **Settings → Connections → Slack** and click **Disconnect**, or remove the app from Slack's own settings. Either way Raddivus's access to the workspace is wiped at once. Only the account owner or an admin can disconnect.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Raddivus replied with one line instead of an answer">
+    This happens when the account is out of credits, its subscription has
+    expired, Slack access is switched off for the account, or the workspace has
+    already had 60 answers in the last hour. The line says which, and for the
+    hourly limit, when to try again. None of these replies costs credits.
+  </Accordion>
+  <Accordion title="The Slack card says Reconnect">
+    Slack stopped accepting Raddivus's access, usually after a change on the
+    Slack side. Click **Reconnect** on the card to approve the app again.
+    Nothing else needs to change.
+  </Accordion>
+  <Accordion title="It answered for the wrong teammate's tasks">
+    "My tasks" is matched to a teammate by your name in Slack, and the answer
+    says whose tasks it showed. When the name fits nobody or more than one
+    teammate, Raddivus asks which one is meant. Make sure your Slack display
+    name matches your name in Raddivus.
+  </Accordion>
+  <Accordion title="Can it change a task or pause an ad?">
+    Not from Slack. Creating, moving, assigning or commenting on tasks, and any
+    change to ads or budgets, is done in Raddivus.
+  </Accordion>
+</AccordionGroup>

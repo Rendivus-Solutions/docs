@@ -13,14 +13,29 @@ Connecting ClickUp lets you send finished Instagram posts straight to your board
     **Connect ClickUp**.
   </Step>
   <Step title="Authorize">
-    A popup opens to ClickUp's login. Sign in if needed and approve the
+    You are taken to ClickUp's login. Sign in if needed and approve the
     integration. This grants Raddivus access to your workspaces.
   </Step>
-  <Step title="Confirm">
-    Back in Raddivus, the Connections tab shows your connected workspaces with a
-    member and space overview.
+  <Step title="Choose your brands">
+    You come back to the ClickUp screen in Settings. Under **Brands using this
+    connection**, tick each brand that works in ClickUp. Nothing is ticked for
+    you.
   </Step>
 </Steps>
+
+## ClickUp and Notion are linked per brand
+
+ClickUp shows as **Connected** in the sidebar's integrations menu, on the
+Integrations tiles and on a brand's page only for the brands you ticked. A brand
+you did not tick shows **Connect**, even while you are signed in to ClickUp.
+Notion works the same way, from **Settings → Integrations → Notion**.
+
+- The ticks are shared with your team. Everyone sees which brands are linked,
+  and who linked them, and anyone can untick a brand.
+- Ticking a brand needs your own ClickUp (or Notion) login. A teammate who has
+  not connected sees the list but cannot tick.
+- Disconnecting ClickUp or Notion unlinks every brand you linked with it.
+- If your login stops working, the brands it is linked to show **Reconnect**.
 
 <Note>ClickUp tokens do not expire, so this is a one-time setup.</Note>
 
@@ -35,6 +50,10 @@ Once a post is finished, open its edit modal and click **Send to ClickUp**. The 
     ClickUp must be connected first, and the post must be finished (text and
     visual done). Connect ClickUp under **Settings → Connections** and try again
     from a completed post.
+  </Accordion>
+  <Accordion title="ClickUp says Connect on one brand but Connected on another">
+    ClickUp is linked per brand. Open **Settings → Connections → ClickUp** and
+    tick the brand under **Brands using this connection**.
   </Accordion>
   <Accordion title="The task was created but the image is missing">
     The task still succeeds even if an attachment fails. Re-send the post to

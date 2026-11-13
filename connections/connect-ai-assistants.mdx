@@ -1,11 +1,11 @@
 ---
 title: "Connect Raddivus to Claude, Claude Code, Cursor and Perplexity"
-description: "Use your brands, folders and the Ad Generator from the AI assistant you already work in. Free to connect on every plan; generating costs the same credits as in Raddivus."
+description: "Use your brands, folders, tasks, projects and the Ad Generator from the AI assistant you already work in. Free to connect on every plan; generating costs the same credits as in Raddivus."
 ---
 
-You can connect Raddivus to an AI assistant and ask it things like "list my brands" or "make two 4:5 ads for Nordic Bakery about the autumn menu". The assistant works as you: it sees what you can see in Raddivus and nothing else.
+You can connect Raddivus to an AI assistant and ask it things like "list my brands", "make two 4:5 ads for Nordic Bakery about the autumn menu" or "what is overdue for Nordic Bakery, and give the photo tasks to Maya". The assistant works as you: it sees what you can see in Raddivus and nothing else.
 
-Connecting is **free on every plan, including the free trial**. Generating costs exactly what it costs in Raddivus: **1 credit per image**, and **1 credit** to make a new version of an ad. Browsing your brands, folders and Knowledge Base, and adding or editing Knowledge Base documents, is free.
+Connecting is **free on every plan, including the free trial**. Generating costs exactly what it costs in Raddivus: **1 credit per image**, and **1 credit** to make a new version of an ad. Everything else is free: browsing your brands, folders and Knowledge Base, managing tasks and projects, and adding or editing Knowledge Base documents.
 
 ## What you need
 
@@ -109,14 +109,20 @@ https://app.raddivus.com/api/mcp
 - List your brands and read a brand's profile.
 - List your folders, the ads in them and your recent ads.
 - Search and read your Knowledge Base.
-- Add new documents to a brand's Knowledge Base, and rename or rewrite existing ones (owners and admins; see below).
+- Add new documents to a brand's Knowledge Base, and rename or rewrite existing ones (see below).
+- List a brand's people, projects and tasks, filtered like the Tasks page (status, priority, platform, assignee, project, due date), and read a task with its comments and pictures or a project with its phases, progress and updates.
+- Create tasks (up to 50 at once, with sub-tasks, assignees, due dates and repeats), edit them, comment and mention teammates.
+- Create and edit projects, turn a task into a project, and save weekly updates and recaps.
+- Delete tasks, projects, comments, pictures, phases and project updates (see below).
 - Check your plan and credits.
 - Generate new ad images for a brand, and make a new version of an ad you generated.
 - Save an ad to one of your folders.
 
-It cannot publish anything, change your brand profile, delete anything, or buy credits.
+It cannot publish anything, change your brand profile, delete ads or Knowledge Base documents, or buy credits.
 
-**Writing to your Knowledge Base** follows the same rules as the app. The account owner and admins can create and edit documents on every brand through their assistant; a team member's assistant can read and search, and is told to ask an owner or admin. Writing is free. The assistant writes in markdown and you get a normal document you can open and edit in Raddivus: headings, lists, tables, links and formatting are kept, pictures are left out. Each brand still holds up to 20 items, and uploaded files such as PDFs can be read but not edited.
+**Tasks and projects** need a plan that includes Tasks. The assistant has exactly your rights: it sees the tasks and projects you see, and can delete only what you could delete in Raddivus. Before it deletes more than 10 tasks, tasks with sub-tasks, or any project, it first tells you how much would be removed, and deletes only when it asks again with those numbers. When it rewrites a brief or a document it gets back the old text, so it can put it back. Teammates you assign or mention get the same notices as when you do it yourself.
+
+**Writing to your Knowledge Base** follows the same rules as the app. The account owner and admins can create and edit documents on every brand through their assistant; a team member can do so on the brands an owner or admin picked for them under **Knowledge base editing**, and is otherwise told to ask an owner or admin. Writing is free. The assistant writes in markdown and you get a normal document you can open and edit in Raddivus: headings, lists, tables, links and formatting are kept, pictures are left out. Each brand still holds up to 20 items, and uploaded files such as PDFs can be read but not edited.
 
 **One request makes at most 12 images** (variations × ad types × angles). A bigger request is refused before anything is charged, and the assistant asks you for fewer. Images usually come back in the same answer; when they take longer, the assistant checks back on its own.
 
@@ -141,6 +147,9 @@ Changing your Raddivus password also disconnects every assistant on your login. 
 <AccordionGroup>
   <Accordion title="The assistant says assistant access is in a limited preview">
     Assistant access is opening to accounts gradually. Try again later, or use Raddivus at app.raddivus.com.
+  </Accordion>
+  <Accordion title="The assistant says tasks and projects are not part of my plan">
+    Tasks and projects through the assistant follow the same plans as the Tasks page. See your plan under **Settings → Billing**.
   </Accordion>
   <Accordion title="The assistant says my plan is not active">
     Browsing still works, but generating is paused until your plan is active. See your plan under **Settings → Billing**.

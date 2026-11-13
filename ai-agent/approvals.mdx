@@ -19,7 +19,39 @@ The agent never makes changes without explicit permission. The agent proposes, a
     If approved, the action runs immediately, and the result (success or
     failure) appears in the chat.
   </Step>
+  <Step title="The agent carries on">
+    A few seconds later the agent replies by itself: it reads the outcome and
+    proposes the next step or tells you the result. Until the reply arrives,
+    "Working on the next step" shows under the card. You do not need to type
+    "continue", and it happens even if you close the tab.
+  </Step>
 </Steps>
+
+If another campaign, ad set or ad in your account has the same name as the one
+on the card, the card also shows its Meta ID under the name, so you can tell
+which one you are approving. For an upload, it shows the ID of the ad set the
+ad goes into. The agent knows this from the lists it read while preparing the
+proposal.
+
+Rejecting a card does nothing further. The agent's follow-up reply is billed
+like any other agent reply.
+
+## Pausing an ad, and undoing it
+
+A card that pauses an ad shows the ad itself: its picture, verdict and current
+numbers, and **Open ad**. While the pause is still to come, it also says
+roughly how much a day the pause stops spending, when the budget is known.
+After it runs, the card's heading says **Ad paused**.
+
+**Undo** turns the ad back on with one click, no second approval. It works for
+24 hours after the pause, and only while the ad is still paused on Meta: if
+you or a teammate changed the ad in Ads Manager since, Undo changes nothing and
+says so. After an undo, the heading says **Ad running**. Past 24 hours, ask the
+agent to resume the ad; it proposes that on a normal approval card.
+
+Approval cards are saved with the conversation. Reopen a chat in another tab,
+on another device or from the history list and each card is where it was, with
+its current status; a card still waiting can be approved from there.
 
 The card appears below the agent's reply. Each approval runs **exactly once**:
 clicking **Approve** twice, or in two tabs, does not repeat the change on Meta
@@ -35,6 +67,28 @@ The agent never assumes a currency. If your ad account's currency is not on
 record yet, the agent looks it up from Meta. If Meta cannot say, amounts are
 shown without a currency symbol and the agent will not propose or apply a
 budget change until the currency is known.
+
+## When the agent asks you to choose
+
+Sometimes the agent needs decisions before it can go on, such as which ad set,
+which angle and which creative. It asks every question it needs at once, in one
+card shown in place of the message box. Each question lists numbered answers:
+click one (or press its number) and the card moves to the next question.
+
+- The arrows beside "1 of 3" go back and forward. Every answer you picked is
+  kept while you move around, so you can change any of them.
+- **Something else** lets you type your own answer.
+- **Skip** leaves a question out; the agent goes on with a sensible default
+  and says which.
+- The × closes the card so you can write a normal message instead.
+
+Nothing reaches the agent until you press **Send answers** on the last
+question. A single question sends as soon as you pick. Your answers then show
+in the chat as one card listing each question with its answer, or "Skipped".
+
+A question is not an approval: your answers are sent as your next message and
+nothing changes on your account. Answering costs nothing; the agent's next
+reply is billed like any other.
 
 ## What needs approval
 

@@ -47,7 +47,6 @@
         "pages": [
           "create-ads/ad-generator",
           "create-ads/ad-copier",
-          "create-ads/projects",
           "create-ads/publish-to-meta",
           "create-ads/video-generator",
           "create-ads/ad-options-reference"
@@ -98,6 +97,7 @@
         "pages": [
           "collaborate/saved-ads",
           "collaborate/tasks",
+          "collaborate/projects",
           "collaborate/team",
           "collaborate/community"
         ]
@@ -188,6 +188,11 @@
     {
       "source": "/platform/quickstart",
       "destination": "/quickstart",
+      "permanent": true
+    },
+    {
+      "source": "/create-ads/projects",
+      "destination": "/collaborate/projects",
       "permanent": true
     }
   ],

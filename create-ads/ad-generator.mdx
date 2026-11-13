@@ -100,11 +100,11 @@ Selecting, downloading, deleting, saving, and sharing are free. An edit re-runs 
 
 ## Projects
 
-Group runs into a [project](/create-ads/projects) with its own instructions: pick one from the **Project** chip before you generate, or leave it on **No project**.
+Group runs into a [project](/collaborate/projects) with its own instructions: pick one from the **Project** chip before you generate, or leave it on **No project**.
 
 ## Advanced canvas view
 
-The Ad Generator also has an **Advanced** canvas mode that shows your brand, style, and generated ads as a visual node graph. Every input, result, and action works the same as the basic view, just laid out spatially.
+The Ad Generator opens in the basic view the first time you use it. The view button at the top left (it reads **Basic**) switches to the **Advanced** canvas mode, which shows your brand, style, offer, and generated ads as a visual node graph. Every input, result, and action works the same as the basic view, just laid out spatially. Whichever view you pick last is the one that opens next time.
 
 ## Troubleshooting
 
@@ -112,6 +112,17 @@ The Ad Generator also has an **Advanced** canvas mode that shows your brand, sty
   <Accordion title="Generation is slow">
     Large requests take longer. Total images equals your variations count, so
     reducing variations speeds things up. You can leave the page while it runs.
+    If a card is still working after about a minute, it adds "Taking longer
+    than usual" and keeps waiting; the image still arrives on its own.
+  </Accordion>
+  <Accordion title="A card says the run failed">
+    The card says why in one sentence and that your credit was refunded. "Our
+    image provider refused the request" means the model's provider turned the
+    run down on its side: try another model, or try again later. "The model
+    declined this prompt" means a safety filter stopped it: reword the offer or
+    instructions. "The model rejected this request" points at the ratio or
+    size: try another one. Click **Retry** to run it again with the same
+    settings.
   </Accordion>
   <Accordion title="My logo or reference image was rejected">
     Use JPG, PNG, WebP, or GIF. The logo must be 2 MB or less, and reference

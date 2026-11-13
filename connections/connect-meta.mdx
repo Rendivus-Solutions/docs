@@ -21,17 +21,27 @@ Connecting a Meta Ads account lets Raddivus read your campaign data and power th
     Go to **Settings → Connections** and find the **Meta** card.
   </Step>
   <Step title="Start the connection">
-    Click **Connect Meta Ads**. A popup opens for Meta's secure login. If the
-    popup is blocked, Raddivus falls back to a full-page redirect.
+    Click **Connect Meta Ads**. The tab moves to Meta's secure login, then
+    comes back to Raddivus when you are done.
   </Step>
   <Step title="Sign in and grant access">
     Sign in to Meta and choose which business and ad accounts to share. Approve
     the requested permissions (reading ads, pages, and insights).
   </Step>
+  <Step title="Pick the ad accounts">
+    Back in Raddivus, a window lists every ad account your login can reach,
+    each with its business picture, ID, currency and status. Active accounts
+    come first; disabled or closed ones are listed after them and cannot be
+    picked. Search by name, ID or business (your ticks stay while you search),
+    and the line under the search shows how many slots your plan has left.
+    **Select all** ticks everything shown when it fits your slots, and **Clear**
+    unticks everything. Press **Connect** or Enter in the search box.
+  </Step>
   <Step title="Link to a brand">
     Back in Raddivus, each connected ad account can be linked to one brand.
-    Connected accounts appear in a list with **Reconnect** and **Unlink**
-    options.
+    Connected accounts appear in a list, each with its business picture, and
+    **Reconnect** and **Unlink** options. An account connected before November
+    2026 shows its first letter until you reconnect it.
   </Step>
 </Steps>
 
@@ -44,7 +54,7 @@ Each plan can keep a limited number of Meta ad accounts connected at once:
 - **VIP:** Unlimited
 - **Free trial:** 2 accounts
 
-The limit is per workspace account, not per brand. Disconnecting an ad account immediately frees a slot. If you have more accounts connected than your current plan allows (perhaps because you downgraded or the limits were recently introduced), everything stays connected and usable. You just cannot add a new account until you upgrade or disconnect something.
+The limit is per workspace account, not per brand. Re-connecting an account you already have does not use a slot. Disconnecting an ad account immediately frees a slot. If you have more accounts connected than your current plan allows (perhaps because you downgraded or the limits were recently introduced), everything stays connected and usable. You just cannot add a new account until you upgrade or disconnect something.
 
 ## Where it's used
 
@@ -70,9 +80,13 @@ When you upload a generated ad to Meta through the agent, it is always created i
     Ad account access is controlled by Meta Business Manager. Confirm you have
     the right role on the ad account, then try again.
   </Accordion>
-  <Accordion title="The login popup didn't open">
-    Allow popups for Raddivus, or let the full-page redirect complete and sign
-    in there.
+  <Accordion title="An ad account is missing or cannot be ticked">
+    The list shows the ad accounts your Meta login can reach. If one is missing,
+    check your role on it in Meta Business Manager and connect again. An account
+    that is greyed out is not active on Meta (disabled, closed, unsettled or
+    under review) and cannot run ads; fix it in Meta first. If every remaining
+    row is locked, your plan's slots are used: press **Upgrade** under the list,
+    or disconnect an account.
   </Accordion>
 </AccordionGroup>
 

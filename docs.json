@@ -31,7 +31,8 @@
         "pages": [
           "connections/connect-meta",
           "connections/connect-instagram",
-          "connections/connect-clickup"
+          "connections/connect-clickup",
+          "connections/connect-ai-assistants"
         ]
       },
       {

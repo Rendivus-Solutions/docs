@@ -95,12 +95,23 @@ document.
 
 On **Create document**, click **Upload** and pick **Files…**, or drag files onto the Knowledge Base. Markdown, text, and Word files become editable documents. Images and PDFs are kept as assets. Open an item's **…** menu to rename, move or delete it.
 
-To bring in a whole folder, drag it in, or click **Upload** and pick **Folder…**. It arrives inside the folder you have open, with all its sub-folders and the same names. While it uploads, the count under the heading reads "Uploading 3 of 12…".
+To bring in a whole folder, drag it in, or click **Upload** and pick **Folder…**. It arrives inside the folder you have open, with all its sub-folders and the same names.
 
-- Files the knowledge base does not take, files over 25 MB, and files nested more than 5 folders deep are named in one message and skipped. The rest still upload.
+- Files the knowledge base does not take, files over 25 MB, and files nested more than 5 folders deep are skipped, each listed in the upload panel with the reason. The rest still upload.
 - Hidden system files (such as `.DS_Store`) are ignored.
 - If the folder holds more files than the brand has room for, nothing is uploaded and the message says how many items of room are left, so a folder never arrives half-copied. Picking several loose files works the same way.
 - On a phone, **Upload** picks files only, because phones cannot pick a folder.
+
+### The upload panel
+
+Every upload opens a panel in the bottom-right corner (a bar across the bottom on a phone). It stays while you move to other pages, so you can keep working. Three files go at a time.
+
+- **Each file** still on the move shows its name and, under it, Waiting or Uploading…. A file that failed says why, with **Retry** to send it again; a skipped file says why it was left out.
+- **Finished files** fold into one line ("12 uploaded"). Click **Show** to list them, and click one to open it.
+- **The header** says how far it has got ("Uploading 7 of 23") with a thin bar of files finished, and at the end how it went ("21 uploaded, 2 failed"). With two or more failed, the circular arrow retries them all.
+- **Cancel one file:** point at its row and click the **×** (always showing on a phone or tablet). It works on a file still waiting and on one already sending. A file cancelled mid-send is removed as soon as it lands, so it never appears in your Knowledge Base.
+- **Cancel all:** the **×** at the top right stops every file still waiting or sending. Once everything has finished, the same **×** closes the panel.
+- Closing the browser tab while files are uploading asks first.
 
 ## Act on several items at once
 

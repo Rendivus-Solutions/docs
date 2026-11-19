@@ -26,22 +26,31 @@ Click any brand card to open it, then switch to the **Knowledge Base** tab.
 - **Editable documents** in a Notion-style editor. Write FAQs, your brand story, positioning, service descriptions, tone guides, and offer details. Use headings, lists, quotes, code blocks, dividers, tables, links and pictures.
 - **File uploads.** Markdown (`.md`), plain text (`.txt`), and Word (`.docx`) files are converted to editable documents automatically. Images and PDFs are stored as assets.
 
-## Limits
+## Space
 
-These are the same on every plan:
+Your account has one pool of knowledge base space, shared by every brand and every teammate:
 
-- Up to **20 items** per brand
-- Up to **25 MB** per file
+| Plan | Space |
+| --- | --- |
+| Starter (and the free trial) | 5 GB |
+| Professional | 25 GB |
+| VIP | 100 GB |
+
+- Uploaded files, pictures inside documents and written text all count. The PDF previews Raddivus makes do not.
+- There is no limit on how many items a brand holds, only on space. Each file can be up to **25 MB**.
+- When the space is full, new documents, uploads and imports are refused. You can still open, edit, download and delete everything, and editing a document you already have always works.
+- Moving to a smaller plan never deletes anything. You keep every item and can add new ones once you are back under your space.
+- To get more space, move to a bigger plan.
 
 ## The list
 
-Your documents and files show as a list or a grid (the switch is at the top). The list has three columns: **Name**, **Uploaded By** and **Uploaded On**. **Sort** orders it by **Newest first**, **Oldest first** or **Name, A to Z**. A long list is split into pages: pick 5, 10, 20, 25 or 100 rows per page (10 to start) and move between pages at the bottom, where "1–10 of 14" says which items you are seeing out of how many. The line at the top of the list counts the same items and says how much room is left, for example "14 items · room for 6 more" (or "limit of 20 reached").
+Your documents and files show as a list or a grid (the switch is at the top). The list has three columns: **Name**, **Uploaded By** and **Uploaded On**. **Sort** orders it by **Newest first**, **Oldest first** or **Name, A to Z**. A long list is split into pages: pick 5, 10, 20, 25 or 100 rows per page (10 to start) and move between pages at the bottom, where "1–10 of 14" says which items you are seeing out of how many. At the top right of the list, a thin bar shows how much of your account's knowledge base space is filled, with the words under it, for example "1.2 GB used · 23.8 GB left · shared by every brand". The bar turns amber when the space is almost full and red when it is full. Hover over the dotted words, or tap them on a phone, to see your plan's total.
 
 ## Folders
 
 The list beside your documents shows **All** and every folder, sub-folders indented under their folder. **New folder** at the bottom makes one. The **+** on a folder (shown when you point at it, or always on a touch screen) opens **New folder**, **Upload files…** and **Upload folder…**, each adding straight into that folder.
 
-A folder you make is saved for the whole team: it stays when it is empty, after a reload and for everyone. It goes only when someone deletes it from its **…** menu, where **Rename** is too. Folders are free and do not count toward the item limit.
+A folder you make is saved for the whole team: it stays when it is empty, after a reload and for everyone. It goes only when someone deletes it from its **…** menu, where **Rename** is too. Folders are free and take no space.
 
 ## Add a document
 
@@ -88,8 +97,8 @@ Type `/` and choose **Image**, or paste or drop a picture into the document.
 JPEG, PNG, WebP and GIF pictures up to **10 MB** work; large pictures are
 shrunk in your browser before they upload. Pictures are stored privately with
 the brand's knowledge files, so only people on your account can open them.
-They are free, do not count toward the 20-item limit, and are deleted with the
-document.
+They are free, count toward your knowledge base space, and are deleted with
+the document.
 
 ## Upload files or a folder
 
@@ -99,7 +108,7 @@ To bring in a whole folder, drag it in, or click **Upload** and pick **Folder…
 
 - Files the knowledge base does not take, files over 25 MB, and files nested more than 5 folders deep are skipped, each listed in the upload panel with the reason. The rest still upload.
 - Hidden system files (such as `.DS_Store`) are ignored.
-- If the folder holds more files than the brand has room for, nothing is uploaded and the message says how many items of room are left, so a folder never arrives half-copied. Picking several loose files works the same way.
+- If the folder is bigger than the space you have left, nothing is uploaded and the message says how big the upload is and how much space is left, so a folder never arrives half-copied. Picking several loose files works the same way.
 - On a phone, **Upload** picks files only, because phones cannot pick a folder.
 
 ### The upload panel
@@ -172,7 +181,7 @@ Open **Settings > Integrations > Notion**, or click **+ Document** on a brand's 
 **Good to know:**
 
 - Importing the same page again refreshes its content and keeps any name or folder you changed.
-- Imports count toward the 20-item limit. The picker shows how many slots are left.
+- Imports count toward your account's knowledge base space. When the space is full, the picker says so, and only pages you already imported can be refreshed.
 - Raddivus only reads from Notion. It never writes anything back.
 - Your Notion connection is yours. Your whole team can read the imported documents, but a teammate who wants to refresh one connects their own Notion first.
 - Disconnecting Notion in Settings keeps the documents you already imported.

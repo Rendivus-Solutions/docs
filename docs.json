@@ -99,6 +99,7 @@
           "collaborate/tasks",
           "collaborate/projects",
           "collaborate/team",
+          "collaborate/guests",
           "collaborate/community"
         ]
       },

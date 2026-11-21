@@ -1,5 +1,5 @@
 ---
-title: "Connect Raddivus to Claude, Claude Code, Cursor and Perplexity"
+title: "Connect Raddivus to Claude, Claude Code, Codex, Cursor and Perplexity"
 description: "Use your brands, folders, tasks, projects and the Ad Generator from the AI assistant you already work in. Free to connect on every plan; generating costs the same credits as in Raddivus."
 ---
 
@@ -17,6 +17,8 @@ https://app.raddivus.com/api/mcp
 ```
 
 - The Raddivus **client id for your assistant**, listed in each section below. Each assistant has its own.
+
+The same steps are in Raddivus under **Settings → Integrations → Connected assistants**: pick your assistant and copy each line with one click.
 
 ## Connect your assistant
 
@@ -58,6 +60,26 @@ https://app.raddivus.com/api/mcp
       </Step>
     </Steps>
   </Tab>
+  <Tab title="Codex">
+    <Steps>
+      <Step title="Add the server and sign in">
+        Run this in your terminal. It pins the sign-in port to 8080, which Raddivus expects.
+
+        ```bash
+        codex mcp add raddivus --url https://app.raddivus.com/api/mcp --oauth-client-id 35a41440-23e1-4c21-b65b-49a7b1093aba -c mcp_oauth_callback_port=8080
+        ```
+
+        Codex opens Raddivus in your browser. Sign in, check that the page names **127.0.0.1**, and press **Allow**.
+      </Step>
+      <Step title="Sign in again later">
+        If Codex ever asks you to sign in again, run this:
+
+        ```bash
+        codex mcp login raddivus -c mcp_oauth_callback_port=8080
+        ```
+      </Step>
+    </Steps>
+  </Tab>
   <Tab title="Cursor">
     <Steps>
       <Step title="Add Raddivus to mcp.json">
@@ -84,17 +106,17 @@ https://app.raddivus.com/api/mcp
   <Tab title="Perplexity">
     <Steps>
       <Step title="Add a custom connector">
-        In Perplexity, add a custom connector, choose a **Remote** server and **OAuth** sign-in, and paste the address.
+        In Perplexity, open **Plugins** in the sidebar, then **Add custom → Add MCP connector** and choose **Remote**. Name it **Raddivus** and paste the address. For an organization, an admin picks **Custom connector** under **Organization settings → Connectors**.
       </Step>
       <Step title="Paste the client id">
-        Paste this client id and leave the secret blank.
+        Under **Advanced**, set **Authentication** to **OAuth**, paste this client id and leave the secret blank.
 
         ```text
         9227e94b-b79c-4747-a190-a30d14d931c1
         ```
       </Step>
       <Step title="Sign in and allow">
-        Perplexity opens Raddivus. Sign in, check that the page names **perplexity.ai**, and press **Allow**.
+        Tick the acknowledgement and press **Add**, then select the Raddivus card. Perplexity opens Raddivus: sign in, check that the page names **perplexity.ai**, and press **Allow**.
       </Step>
     </Steps>
   </Tab>

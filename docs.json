@@ -67,13 +67,6 @@
         ]
       },
       {
-        "group": "Content Studio",
-        "pages": [
-          "content-studio/overview",
-          "content-studio/competitors"
-        ]
-      },
-      {
         "group": "AI Agent",
         "pages": [
           "ai-agent/overview",
